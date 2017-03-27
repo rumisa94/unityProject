@@ -9,7 +9,8 @@ public class example : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Debug.Log("Hi developer");
-        Debug.Log("trying the reposotry");
+        Debug.Log("testing the new branch function");
+        
         ballR = GetComponent<Renderer>();
         
 }
@@ -18,6 +19,9 @@ public class example : MonoBehaviour {
 	void Update () {
         float lerp = Mathf.PingPong(Time.time, duration) / duration; ;
         ballR.material.color = Color.Lerp(start, end, lerp);
+
+        transform.Rotate(1, 3, 4);
+        
 
 	
 	}
